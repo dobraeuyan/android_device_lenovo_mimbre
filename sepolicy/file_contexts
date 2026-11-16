@@ -16,3 +16,4 @@
 /dev/block/platform/soc/7824900\.sdhci/by-name/config     u:object_r:frp_block_device:s0
 
 /dev/block/mmcblk0p14                                     u:object_r:ssd_device:s0
+/vendor/bin/charger_led                                     u:object_r:vendor_charger_led_exec:s0
