@@ -1,7 +1,3 @@
-# =============================================================================
-# =============================================================================
-# -----------------------------------------------------------------------------
-
 -include device/qcom/msm8909-common/BoardConfigCommon.mk
 
 BOARD_KERNEL_SEPARATED_DT := false
@@ -18,6 +14,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12311838208
 TARGET_KERNEL_ADDITIONAL_CONFIG := lineage_mimbre_defconfig
 BOARD_KERNEL_CMDLINE += phy_msm_usb.dcp_max_current=2000
 
+TARGET_RELEASETOOLS_EXTENSIONS := device/lenovo/mimbre
+
 TARGET_OTA_ASSERT_DEVICE := mimbre,YT3-X50F,yt3-x50f
 
 TARGET_VENDOR_PROP += device/lenovo/mimbre/vendor.prop
@@ -27,5 +25,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_RECOVERY_FSTAB := device/lenovo/mimbre/rootdir/etc/recovery.fstab
 
 TARGET_RECOVERY_DENSITY := mdpi
+
+TARGET_WCNSS_WLAN_NV_IN_PERSIST := false
 
 BOARD_SEPOLICY_DIRS += device/lenovo/mimbre/sepolicy
